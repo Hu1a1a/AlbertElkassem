@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: []
 })
-export class AppComponent {
-  title = 'YK_WEb_Studio';
+export class AppComponent implements OnInit {
+  title: string = 'YK_WEb_Studio';
+
+  ngOnInit(): void {
+  }
 }
